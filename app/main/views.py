@@ -18,12 +18,12 @@ from app.config import REDISHOST
 CORS(main, supports_credentials=True)
 
 # 生产环境
-baseurl="/api"
-picBasedir = os.path.abspath(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(__file__)))))
+# baseurl="/api"
+# picBasedir = os.path.abspath(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(__file__)))))
 
 #开发环境
-# baseurl=""
-# picBasedir = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
+baseurl=""
+picBasedir = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 
 # 数据库重载
 # @main.route(baseurl+'/creatdb')

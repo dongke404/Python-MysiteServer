@@ -10,7 +10,7 @@ mongo=PyMongo(app, uri=MONGODBHOST)
 
 
 if __name__ == '__main__':
-    server = WSGIServer(("0.0.0.0", 5000), app)
+    server = WSGIServer(("127.0.0.1", 5000), app)
     server.serve_forever()
 
 
